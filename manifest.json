@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Get Text in Divs",
+  "version": "1.0",
+  "description": "Retrieve details of links and text of a website",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*"],
+      "js": ["popup.js"]
+    }
+  ]
+}
